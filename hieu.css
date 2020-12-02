@@ -19,6 +19,7 @@ img{
         margin-top: 10px;
     }
 div.tinh{
+    margin-top: 50px;
     margin-left: 550px;
     width: 280px;
     background-color: orange;
@@ -42,4 +43,10 @@ select{
 button{
     margin-top: 10px;
     margin-left: 30px;
+}
+td:hover{
+    background: aqua;
+}
+div.cuoi{
+    margin-top: 260px;
 }

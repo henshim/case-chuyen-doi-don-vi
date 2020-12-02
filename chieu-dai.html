@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi chiều dài</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="hieu.css">
+</head>
+<body background="img/chieu-dai.jpg">
+<h3 style="text-align: center; color: green">Chuyển đổi chiều dài</h3>
+<div class="tinh">
+    <p>From</p>
+    <select id="from">
+        <option value="3280">Feet(f)</option>
+        <option value="1000">Meter(m)</option>
+        <option value="1">Kilometer(Km)</option>
+        <option value="100000">Centimete(Cm)</option>
+    </select>
+    <br>
+    <input type="number" id="inputValue">
+
+    <p style="margin-top: 6px">To</p>
+    <select id="to">
+        <option value="3280">Centimete(Cm)</option>
+        <option value="1000">Kilometer(Km)</option>
+        <option value="1">Meter(m)</option>
+        <option value="100000">Feet(f)</option>
+    </select>
+    <br>
+    <input disabled type="text" id="output">
+    <br>
+    <button onclick="doi()" onkeypress="keyPress()">Convert</button>
+    <form>
+        <input type="radio" id="tron" value="tron" name="lamTron" onclick="decimalAdjust()">
+        <label for="tron">Làm tròn số</label>
+        <input type="radio" id="kotron" value="koTron" name="lamTron" onclick="doi()">
+        <label for="kotron">Không làm tròn số</label>
+    </form>
+</div>
+</body>
+</html>

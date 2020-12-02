@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="hieu.css">
+</head>
+<body background="img/nd2.jpg">
+<h3 style="text-align: center">Chuyển đổi nhiệt độ</h3>
+<div class="tinh">
+    <p>From</p>
+    <select id="from">
+        <option value="1">Độ C</option>
+        <option value="274.15">Độ K</option>
+        <option value="33.8">Độ F</option>
+        <option value="0.33">Độ Newton</option>
+    </select>
+    <br>
+    <input type="number" id="inputValue">
+    <p>To</p>
+    <select id="to">
+        <option value="0.33">Độ Newton</option>
+        <option value="33.8">Độ F</option>
+        <option value="274.15">Độ K</option>
+        <option value="1">Độ C</option>
+    </select>
+    <br>
+    <input disabled type="number" id="output">
+    <br>
+    <button onclick="doi()"onkeypress="keyPress()">Convert</button>
+    <form>
+        <input type="radio" id="tron" value="tron" name="lamTron" onclick="decimalAdjust()">
+        <label for="tron">Làm tròn số</label>
+        <input type="radio" id="kotron" value="koTron" name="lamTron" onclick="doi()">
+        <label for="kotron">Không làm tròn số</label>
+    </form>
+</div>
+</body>
+</html>

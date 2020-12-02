@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tốc độ</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="hieu.css">
+</head>
+<body background="img/toc-do.png">
+<h3 style="text-align: center">Chuyển đổi tốc độ</h3>
+<div class="tinh">
+    <p>From</p>
+    <select id="from">
+        <option value="1">Kilometer/h</option>
+        <option value="1000">Meter/h</option>
+        <option value="0.017">Kilometer/m</option>
+        <option value="16.667">Meter/m</option>
+    </select>
+    <br>
+    <input type="number" id="inputValue">
+    <p style="margin-top: 6px">To</p>
+    <select id="to">
+        <option value="16.667">Meter/m</option>
+        <option value="0.017">Kilometer/m</option>
+        <option value="1000">Meter/h</option>
+        <option value="1">Kilometer/h</option>
+    </select>
+    <br>
+    <input disabled type="number" id="output">
+    <br>
+    <button onclick="doi()" onkeypress="keyPress()">Convert</button>
+    <form>
+        <input type="radio" id="tron" value="tron" name="lamTron" onclick="decimalAdjust()">
+        <label for="tron">Làm tròn số</label>
+        <input type="radio" id="kotron" value="koTron" name="lamTron" onclick="doi()">
+        <label for="kotron">Không làm tròn số</label>
+    </form>
+</div>
+</body>
+</html>

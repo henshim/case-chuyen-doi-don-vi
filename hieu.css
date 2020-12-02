@@ -1,0 +1,45 @@
+
+div.head{
+    animation-name: keyframe1;
+    animation-duration:5s ;
+    animation-iteration-count:infinite;
+}
+@keyframes keyframe1 {
+    0%{background-color: red;}
+    50%{background-color: yellow;}
+    100%{background-color:  green}
+}
+div.boby {
+    background-color: yellow;
+    width: 270px;
+    margin-left: 525px;
+    border-radius: 20px 20px 20px 20px;
+}
+img{
+        margin-top: 10px;
+    }
+div.tinh{
+    margin-left: 550px;
+    width: 280px;
+    background-color: orange;
+    border-radius: 20px 20px 20px  20px;
+}
+p{
+    margin-left: 20px;
+    margin-bottom: 6px;
+}
+input{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+}
+form{
+    margin-left: 10px;
+}
+select{
+    margin-left: 25px;
+}
+button{
+    margin-top: 10px;
+    margin-left: 30px;
+}

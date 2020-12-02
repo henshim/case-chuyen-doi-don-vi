@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi cân nặng</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="hieu.css">
+</head>
+<body background="img/can-nang.png">
+<h3 style="text-align: center">Chuyển dổi cân nặng</h3>
+<div class="tinh">
+    <p>From</p>
+    <select id="from">
+        <option value="1000">Gram(g)</option>
+        <option value="1">Kilogram(Kg)</option>
+        <option value="100000">Centigram(Cg)</option>
+        <option value="1000000">Milligram(Mg)</option>
+    </select>
+    <br>
+    <input type="number" id="inputValue">
+
+    <p style="margin-top: 6px">To</p>
+    <select id="to">
+        <option value="1000000">Milligram(Mg)</option>
+        <option value="100000">Centigram(Cg)</option>
+        <option value="1">Kilogram(Kg)</option>
+        <option value="1000">Gram(g)</option>
+    </select>
+    <br>
+    <input disabled type="number" id="output">
+    <br>
+    <button onclick="doi()" onkeypress="keyPress()">Convert</button>
+    <form>
+        <input type="radio" id="tron" value="tron" name="lamTron" onclick="decimalAdjust()">
+        <label for="tron">Làm tròn số</label>
+        <input type="radio" id="kotron" value="koTron" name="lamTron" onclick="doi()">
+        <label for="kotron">Không làm tròn số</label>
+    </form>
+</div>
+
+</body>
+</html>

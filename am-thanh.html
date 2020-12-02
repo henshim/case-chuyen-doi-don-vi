@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi âm thanh</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="hieu.css">
+</head>
+<body background="img/am-thanh.jpg">
+<h3 style="text-align: center">Chuyển đổi âm thanh</h3>
+<div class="tinh">
+    <p>From</p>
+    <select id="from">
+        <option value="1">Bel(B)</option>
+        <option value="10">Decibel(dB)</option>
+        <option value="1.151">Neper(Np)</option>
+    </select>
+    <br>
+    <input type="number" id="inputValue">
+    <p style="margin-top: 6px">To</p>
+    <select id="to">
+        <option value="1.151">Neper(Np)</option>
+        <option value="10">Decibel(dB)</option>
+        <option value="1">Bel(B)</option>
+    </select>
+    <br>
+    <input disabled type="number" id="output" style="background-color: white">
+    <br>
+    <button onclick="doi()" onkeypress="keyPress()">Convert</button>
+
+    <form>
+        <input type="radio" id="tron" value="tron" name="lamTron" onclick="decimalAdjust()">
+        <label for="tron">Làm tròn số</label>
+        <input type="radio" id="kotron" value="koTron" name="lamTron" onclick="doi()">
+        <label for="kotron">Không làm tròn số</label>
+    </form>
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@ function doi() {
 }
 
 function decimalAdjust(){
-    let a=Math.ceil(document.getElementById('output').value)
+    let a=Math.round(document.getElementById('output').value)
     document.getElementById('output').value=a;
 }
 
@@ -23,11 +23,3 @@ function keyPress(event){
     }
 }
 addEventListener('keypress',keyPress);
-
-document.querySelector('.boby').onmousemove=(e)=> {
-    const x = e.pageX - e.target.offsetLeft
-    const y = e.pageY - e.target.offsetTop;
-
-    e.target.style.setProperty('--x', `${x}px`)
-    e.target.style.setProperty('--y', `${y}px`)
-}
